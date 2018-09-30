@@ -16,11 +16,13 @@ ENV INFLUX_URL="http://REPLACE_ME:8086" \
     TELEGRAF_INTERVAL="10s" \
     TELEGRAF_DEBUG="true" \
     TELEGRAF_QUIET="false" \
+    TELEGRAF_METRIC_BATCH_SIZE="10000" \
+    TELEGRAF_METRIC_BUFFER_LIMIT="200000" \
     TELEGRAF_ARGS=""
 
 
-# statsd udp
-EXPOSE 8125
+# influx udp (inputs.socket_listener)
+EXPOSE 8094
 
-# http_listener
+# influx http (inputs.http_listener)
 EXPOSE 8186
