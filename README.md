@@ -1,5 +1,8 @@
 # telegraf
 
-InfluxDB telegraf pod.
+This container is used for creating InfluxDB relays in Kubernetes.
 
-See Dockerfile for available env options
+It listens to 8086 (http) and 8089 (udp) by default.
+
+See Dockerfile for available environment variables.
+
