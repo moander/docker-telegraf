@@ -22,7 +22,7 @@ ENV INFLUX_URL="http://REPLACE_ME:8086" \
 
 
 # influx udp (inputs.socket_listener)
-EXPOSE 8094
+EXPOSE 8089
 
 # influx http (inputs.http_listener)
-EXPOSE 8186
+EXPOSE 8086
