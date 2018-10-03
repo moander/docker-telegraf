@@ -28,3 +28,5 @@ EXPOSE 8089
 
 # influx http (inputs.http_listener)
 EXPOSE 8086
+
+CMD telegraf ${TELEGRAF_ARGS}
