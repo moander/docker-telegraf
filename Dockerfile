@@ -1,5 +1,7 @@
 FROM telegraf:1.8-alpine
 
+RUN apk add --no-cache jq nano curl
+
 ADD telegraf.conf /etc/telegraf/
 
 # Available config options
